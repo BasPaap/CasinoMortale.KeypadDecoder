@@ -53,5 +53,8 @@ void loop() {
 	{
 		Serial.print("Received pinCode:");
 		Serial.println(receivedChars);
+
+		softwareSerial.print('U');
+		softwareSerial.flush();
 	}
 }
